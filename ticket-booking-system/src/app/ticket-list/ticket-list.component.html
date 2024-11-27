@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    <li *ngFor="let ticket of tickets">
+      <strong>Name:</strong> {{ ticket.name }}<br>
+      <strong>Event:</strong> {{ ticket.event }}<br>
+      <strong>Time:</strong> {{ ticket.time | date:'short' }}
+    </li>
+  </ul>
+</div>
